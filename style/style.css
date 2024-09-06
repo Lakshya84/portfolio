@@ -393,7 +393,7 @@ footer {
     /* height: 100vh; */
     padding: 0 2%;
     font-family: abril;
-    padding-top: 14vh;
+    padding-top: 5%;
 }
 
 footer h2 {
@@ -497,7 +497,7 @@ footer i:hover {
     }
 
     .projects {
-        height: 39vh;
+        height: 30vh;
     }
 
     .projects img {
