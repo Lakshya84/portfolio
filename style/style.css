@@ -17,7 +17,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #0f0f0f;
+    background-color: #333;
     color: white;
 }
 
@@ -69,7 +69,8 @@ nav {
     font-family: shrikhand;
     position: fixed;
     z-index: 10;
-    background-color: transparent;
+    background-color: #3333333d;
+    backdrop-filter: blur(1px);
 }
 
 nav h2 {
@@ -180,13 +181,18 @@ nav a {
     padding: 10px;
     /* flex-direction: row; */
     /* overflow: scroll; */
-    font-family: abril;
+    /* font-family: abril; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .marq {
     display: inline-block;
-    font-size: 4vw;
-    color: red;
+    font-size: 5vw;
+    color: powderblue;
+    font-family: abel;
+    font-weight: 900;
 }
 
 .marq h1 {
@@ -235,6 +241,7 @@ nav a {
     font-weight: 900;
     margin-bottom: 2rem;
     padding-left: 2%;
+    color: #ff9f81;
 }
 
 
@@ -264,27 +271,27 @@ nav a {
     display: flex;
     align-items: center;
     padding-left: 2%;
-    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    /* transition: all 0.3s ease-in-out; Smooth transition for all properties */
 }
 
 .common a {
-    font-family: abril; /* Use the desired hover font-family by default to avoid switching */
+    font-family: 'shrikhand';
     font-size: 4vw;
     text-decoration: none;
-    color: red;
-    transition: color 0.3s ease-in-out;
+    color: burlywood;
+    /* transition: color 0.3s ease-in-out; */
 }
 
 .common a:hover {
-    color: royalblue; /* Only change the color on hover */
-    font-family: shrikhand;
+    color: crimson;
+    font-family: 'abril';
+    font-size: 4.8vw;
 }
 
-.common:hover .over {
+/* .common:hover .over {
     opacity: 0;
     color: transparent;
-    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
-}
+} */
 
 .projects img {
     height: 20%;
@@ -292,7 +299,7 @@ nav a {
     object-fit: contain;
     position: absolute;
     opacity: 0.2;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition for image opacity */
+    /* transition: opacity 0.3s ease-in-out; Smooth transition for image opacity */
 }
 
 
@@ -401,7 +408,7 @@ footer h2 {
     font-family: 'abel';
     font-family: abril;
     font-weight: 400;
-    color: lime;
+    color: darkseagreen;
     border-bottom: 1px solid;
 }
 
@@ -410,7 +417,7 @@ footer h1 {
     font-family: 'abel';
     font-family: shrikhand;
     font-weight: 400;
-    color: maroon;
+    color: #ff5676;
     line-height: 10vw;
     letter-spacing: -0.01vw;
     padding-top: 2rem;
@@ -424,9 +431,9 @@ i {
 }
 
 footer p {
-    font-size: 4vw;
+    font-size: 1.4vw;
     font-family: sans-serif;
-    color: dodgerblue;
+    color: lightcoral;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -436,13 +443,13 @@ footer p {
 }
 
 footer a:hover {
-    color: red;
+    color: peru;
     text-decoration: none;
     font-weight: 100;
 }
 
 footer i:hover {
-    color: cornflowerblue;
+    color: peru;
     text-decoration: none;
     font-weight: 100;
 }
