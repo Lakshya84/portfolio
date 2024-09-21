@@ -27,6 +27,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 /* NAV BAR */
 
 nav {
@@ -137,15 +138,9 @@ nav a {
     padding: 10px;
 }
 
-.myself{
-    background-color: rgb(43, 43, 46);
-}
-
-.myself h1{
-    background-color: rgb(43, 43, 46);
-}
-
-.myself p{
+.myself,
+.myself h1,
+p {
     background-color: rgb(43, 43, 46);
 }
 
@@ -173,22 +168,23 @@ nav a {
     padding: 10%;
     display: flex;
     justify-content: unset;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .myself h1 {
-    font-size: 5vw;
-    font-family: abel;
+    font-size: 3vw;
+    font-family: abril;
     padding-right: 1vw;
+    padding-left: 1vw;
+    font-weight: 400;
 }
 
-
 .myself p {
-    font-family: shrikhand;
-    font-size: 2vw;
-    padding-left: 1vw;
+    font-family: 'shrikhand';
+    font-size: 2.2vw;
+    padding-left: 2vw;
     border-left: 1px solid red;
-    padding-top: 1vw;
+    margin-left: 5vw;
 }
 
 /* Tech Stack Section */
@@ -220,11 +216,12 @@ nav a {
     display: flex;
     align-items: center;
     padding-left: 2%;
+    flex-wrap: wrap;
 }
 
-.common a {
+.project-link {
     font-family: 'shrikhand';
-    font-size: 4vw;
+    font-size: 3.2vw;
     text-decoration: none;
     color: burlywood;
 }
@@ -232,7 +229,7 @@ nav a {
 .common a:hover {
     color: crimson;
     font-family: 'abril';
-    font-size: 4.8vw;
+    font-size: 4vw;
 }
 
 .projects img {
@@ -240,13 +237,29 @@ nav a {
     object-fit: contain;
     opacity: 0.8;
     border-radius: 20px;
+    float: right;
 }
 
+.projects img:hover {
+    scale: 102%
+}
 
 /* SKILLS SECTION */
 
 .skills {
     margin-bottom: 2%;
+}
+
+.skills button {
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills button img:hover {
+    scale: 110%;
 }
 
 .skills-img {
@@ -262,72 +275,6 @@ nav a {
     border-radius: 20px;
     margin: 4px;
     box-shadow: 0px 0px 6px 2px cadetblue;
-}
-
-/* FORM SECTION */
-
-#contact {
-    height: 100vh;
-}
-
-.container {
-    padding: 2% 18%;
-    box-shadow: 2px -4px 10px 10px rgb(11 233 36 / 10%);
-    margin: 2% 2%;
-}
-
-.container h2 {
-    margin-bottom: 2vw;
-    font-size: 6vw;
-    font-family: 'abril';
-    font-weight: 400;
-}
-
-.container label {
-    margin-bottom: 0.5vw;
-    display: block;
-    font-weight: 100;
-    font-family: 'abel';
-    color: red;
-    font-size: 2vw;
-}
-
-.container input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.container button {
-    width: 20%;
-    padding: 10px;
-    background-color: steelblue;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    font-family: abel;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    height: 6vh;
-}
-
-.container button:hover {
-    background-color: #218838;
-    scale: 1.03;
-}
-
-#status {
-    margin-top: 20px;
-    text-align: center;
-    color: #222;
 }
 
 /* FOOTER SECTION */
@@ -361,7 +308,8 @@ footer h1 {
     background-color: #444;
 }
 
-footer h1 a, i {
+footer h1 a,
+i {
     color: blanchedalmond;
     text-decoration: none;
     font-weight: 100;
@@ -449,6 +397,10 @@ footer i:hover {
         padding-bottom: 4%;
     }
 
+    .myself p {
+        margin-left: 0;
+    }
+
     .projects {
         height: 40vh;
         padding: 2%;
@@ -485,7 +437,7 @@ footer i:hover {
         align-items: center;
     }
 
-    footer{
+    footer {
         background-color: #222;
     }
 
@@ -497,7 +449,8 @@ footer i:hover {
         background-color: #222;
     }
 
-    footer h1 a, i {
+    footer h1 a,
+    i {
         background-color: #222;
     }
 
@@ -509,7 +462,8 @@ footer i:hover {
         background-color: #222;
     }
 
-    footer p{
+    footer p {
         background-color: #222;
+        font-size: 3vw;
     }
 }
